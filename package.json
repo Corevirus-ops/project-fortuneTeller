@@ -1,0 +1,13 @@
+const fortuneOpener = ["You Are", "You Will Have", "You Can", "You Have", "You Won't", "You Lack", "You Love", "You Laugh,", "You Can Not", "You Are Not"];
+const fortuneMid = [" Blessed", " Shop", " Breathe", " Love", " Bundle of Joy", " Scars", " Scared", " Lustful", " Insightful", " Capable"];
+const fortuneEnd = [" With Laughs.", "Another", ", Be Careful", ", Share a Laugh", ".", ", Take Deep Breathes", ", Carress Your Heart", ". Live, Love, Laugh", " It Is Okay To Be Afraid", ". The Choice is Yours"]
+
+const fortuneTeller = () => {
+let fate1 = Math.floor(Math.random() * 10);
+let fate2 = Math.floor(Math.random() * 10);
+  let fate3 = Math.floor(Math.random() * 10);
+
+ console.log(fortuneOpener[fate1] + fortuneMid[fate2] + fortuneEnd[fate3] )
+}
+
+fortuneTeller();
